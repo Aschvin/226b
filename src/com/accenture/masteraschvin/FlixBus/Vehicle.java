@@ -10,11 +10,14 @@ public class Vehicle {
 
     int passengerCapacity;
 
-    public Vehicle(int door, int trunk, int wheel, int passengerCapacity) {
+    String numberPlate;
+
+    public Vehicle(int door, int trunk, int wheel, int passengerCapacity, String numberPlate) {
         this.door = door;
         this.trunk = trunk;
         this.wheel = wheel;
         this.passengerCapacity = passengerCapacity;
+        this.numberPlate = numberPlate;
     }
 
     public int getDoor() {
@@ -47,5 +50,13 @@ public class Vehicle {
 
     public void setPassengerCapacity(int passengerCapacity) {
         this.passengerCapacity = passengerCapacity;
+    }
+
+    public String getNumberPlate() {
+        return numberPlate;
+    }
+
+    public void setNumberPlate(String numberPlate) {
+        this.numberPlate = numberPlate;
     }
 }
