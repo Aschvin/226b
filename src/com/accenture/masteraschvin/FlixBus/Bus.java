@@ -6,8 +6,8 @@ public class Bus extends Vehicle{
 
     boolean comfortIsFirstClass;
 
-    public Bus(int door, int trunk, int wheel, int passengerCapacity, boolean busTypeIsDoubleDecker, boolean comfortIsFirstClass) {
-        super(door, trunk, wheel, passengerCapacity);
+    public Bus(int door, int trunk, int wheel, int passengerCapacity, String numberPlate, boolean busTypeIsDoubleDecker, boolean comfortIsFirstClass) {
+        super(door, trunk, wheel, passengerCapacity, numberPlate);
         this.busTypeIsDoubleDecker = busTypeIsDoubleDecker;
         this.comfortIsFirstClass = comfortIsFirstClass;
     }
