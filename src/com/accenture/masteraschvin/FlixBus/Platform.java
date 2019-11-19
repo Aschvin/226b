@@ -10,7 +10,7 @@ public class Platform {
 
     String busType;
 
-    boolean  occupied;
+    boolean occupied;
 
     public Platform(String platformNumber, String platformSize, boolean busServiceIsInternational, String busType, boolean occupied) {
         this.platformNumber = platformNumber;
@@ -19,6 +19,7 @@ public class Platform {
         this.busType = busType;
         this.occupied = occupied;
     }
+
 
     public String getPlatformNumber() {
         return platformNumber;
