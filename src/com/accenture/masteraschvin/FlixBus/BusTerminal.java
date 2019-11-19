@@ -8,6 +8,9 @@ public class BusTerminal {
     List<Platform> platforms;
     Travel travel;
 
+    public BusTerminal() {
+    }
+
     public BusTerminal(String terminal, List<Platform> platforms, Travel travel) {
         this.terminal = terminal;
         this.platforms = platforms;

@@ -12,6 +12,9 @@ public class Vehicle {
 
     String numberPlate;
 
+    public Vehicle() {
+    }
+
     public Vehicle(int door, int trunk, int wheel, int passengerCapacity, String numberPlate) {
         this.door = door;
         this.trunk = trunk;

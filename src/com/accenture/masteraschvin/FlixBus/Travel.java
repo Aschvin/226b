@@ -4,26 +4,40 @@ import java.time.LocalTime;
 
 public class Travel {
 
-    String destination;
+    BusTerminal start;
+
+    BusTerminal destination;
 
     LocalTime departureTime;
 
     LocalTime arrivalTime;
 
+    Bus bus;
+
     boolean tripIsInternational;
 
-    public Travel(String departure, LocalTime departureTime, LocalTime arrivalTime, boolean tripIsInternational) {
-        this.destination = departure;
+    public Travel(BusTerminal start, BusTerminal destination, LocalTime departureTime, LocalTime arrivalTime, Bus bus, boolean tripIsInternational) {
+        this.start = start;
+        this.destination = destination;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
+        this.bus = bus;
         this.tripIsInternational = tripIsInternational;
     }
 
-    public String getDestination() {
+    public BusTerminal getStart() {
+        return start;
+    }
+
+    public void setStart(BusTerminal start) {
+        this.start = start;
+    }
+
+    public BusTerminal getDestination() {
         return destination;
     }
 
-    public void setDestination(String destination) {
+    public void setDestination(BusTerminal destination) {
         this.destination = destination;
     }
 
@@ -41,6 +55,14 @@ public class Travel {
 
     public void setArrivalTime(LocalTime arrivalTime) {
         this.arrivalTime = arrivalTime;
+    }
+
+    public Bus getBus() {
+        return bus;
+    }
+
+    public void setBus(Bus bus) {
+        this.bus = bus;
     }
 
     public boolean isTripIsInternational() {
