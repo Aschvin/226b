@@ -6,10 +6,12 @@ public class BusTerminal {
 
     String terminal;
     List<Platform> platforms;
+    Travel travel;
 
-    public BusTerminal(String terminal, List<Platform> platforms) {
+    public BusTerminal(String terminal, List<Platform> platforms, Travel travel) {
         this.terminal = terminal;
         this.platforms = platforms;
+        this.travel = travel;
     }
 
     public String getTerminal() {
@@ -26,5 +28,13 @@ public class BusTerminal {
 
     public void setPlatforms(List<Platform> platforms) {
         this.platforms = platforms;
+    }
+
+    public Travel getTravel() {
+        return travel;
+    }
+
+    public void setTravel(Travel travel) {
+        this.travel = travel;
     }
 }

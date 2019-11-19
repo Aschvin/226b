@@ -10,17 +10,19 @@ public class Platform {
 
     String busType;
 
-    Travel travel;
-
     boolean occupied;
 
-    public Platform(String platformNumber, String platformSize, boolean busServiceIsInternational, String busType, Travel travel, boolean occupied) {
+    public Platform(String platformNumber, String platformSize, boolean busServiceIsInternational, String busType, boolean occupied) {
         this.platformNumber = platformNumber;
         this.platformSize = platformSize;
         this.busServiceIsInternational = busServiceIsInternational;
         this.busType = busType;
-        this.travel = travel;
         this.occupied = occupied;
+    }
+
+    public boolean isAvailable(Travel travel){
+
+        return false;
     }
 
     public String getPlatformNumber() {
@@ -53,14 +55,6 @@ public class Platform {
 
     public void setBusType(String busType) {
         this.busType = busType;
-    }
-
-    public Travel getTravel() {
-        return travel;
-    }
-
-    public void setTravel(Travel travel) {
-        this.travel = travel;
     }
 
     public boolean isOccupied() {

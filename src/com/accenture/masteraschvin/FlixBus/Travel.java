@@ -4,7 +4,7 @@ import java.time.LocalTime;
 
 public class Travel {
 
-    String departure;
+    String destination;
 
     LocalTime departureTime;
 
@@ -13,18 +13,18 @@ public class Travel {
     boolean tripIsInternational;
 
     public Travel(String departure, LocalTime departureTime, LocalTime arrivalTime, boolean tripIsInternational) {
-        this.departure = departure;
+        this.destination = departure;
         this.departureTime = departureTime;
         this.arrivalTime = arrivalTime;
         this.tripIsInternational = tripIsInternational;
     }
 
-    public String getDeparture() {
-        return departure;
+    public String getDestination() {
+        return destination;
     }
 
-    public void setDeparture(String departure) {
-        this.departure = departure;
+    public void setDestination(String destination) {
+        this.destination = destination;
     }
 
     public LocalTime getDepartureTime() {
